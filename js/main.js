@@ -67,6 +67,10 @@
             $('.scroll-to-bottom').fadeIn('slow');
         }
     });
+    $('.scroll-to-bottom').click(function () {
+        $('html, body').animate({scrollTop: $(document).height()}, 1500, 'easeInOutExpo');
+        return false;
+    });
 
 
     // Skills
